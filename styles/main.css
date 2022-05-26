@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&family=Poppins:ital,wght@0,200;0,700;1,700&display=swap');
+:root {
+    --page-background: #2b2929;
+    --main-background: #d0d1ff;
+    --main-color: #333333;
+    --accent-color: #000000;
+    --link-color: #ff0000;
+    --hover-color: #d66ba0;
+    --normal-gap: 1em;
+    --wide-gap: 2em;
+}
+html {
+    height:100%;
+    font-family: 'Noto Serif', serif;
+    font-size: 120%;
+    background-color: var(--page-background);
+    color: var(--main-color);
+  }
+
+p {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    color: black;
+}
+
+h1,h2,h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: rgb(255, 0, 234);
+    border-bottom: thin solid var(--accent-color);
+  }
+a {
+    color: var(--link-color);
+}
+
+.content-wrapper {
+    max-width: 960px; 
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+}
+
+header.page-title {
+    background-color: var(--page-background);
+    background-image: url("../images/Kawaii-Dake-Ja-Nai-Shikimori-san-Episode-3.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+    right:0;
+}
+header.page-title h1 {
+    color: white;
+    border: none;
+    font-size: 7rem;
+}
+body > nav  {
+    position: fixed;
+    top:0;
+    background-color: rgba(236, 205, 229, 0.5);
+    backdrop-filter: blur(5px);
+    left:0;
+    right:0;
+}
+ul.main-menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+UL.main-menu li{
+    display: inline-block;
+}
+ul.main-menu li a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 100%;
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+ul.main-menu li a:hover{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 100%;
+    background-color: var(--hover-color);
+    color: white;
+}
+section.list-colorized {
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    color: black;
+}
+html {
+    height: 100%;
+  }
+  
+  .parallax {
+    /* The image used */
+    background-image: url("../images/Kawaii-Dake-Ja-Nai-Shikimori-san-Episode-3.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
