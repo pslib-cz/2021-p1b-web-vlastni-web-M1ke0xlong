@@ -7,13 +7,15 @@
     --accent-color: #000000;
     --link-color: #ff0000;
     --hover-color: #d66ba0;
+    --h-color: rgb(255, 0, 234);
+    --footer-color: rgb(212, 210, 210);
     --normal-gap: 1em;
     --wide-gap: 2em;
 }
 html {
     height:100%;
     font-family: 'Noto Serif', serif;
-    font-size: 120%;
+    font-size: 20px;
     background-color: var(--page-background);
     color: var(--main-color);
   }
@@ -25,28 +27,20 @@ p {
     color: black;
 }
 
-h1,h2,h3 {
+h1,h2,h3, footer a {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    color: rgb(255, 0, 234);
+    color: var(--h-color);
     border-bottom: thin solid var(--accent-color);
   }
 a {
     color: var(--link-color);
 }
 
-.content-wrapper {
-    max-width: 960px; 
-    margin: 0 auto;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 15px;
-}
-
-header.page-title {
-    background-color: var(--page-background);
-    background-image: url("../images/Kawaii-Dake-Ja-Nai-Shikimori-san-Episode-3.jpg");
-    min-height: 100vh;
+footer {
+    height: 100%;
+    width: 100%;
+    background-color: var(--footer-color);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -55,6 +49,38 @@ header.page-title {
     top:0;
     left:0;
     right:0;
+    border-color: #000000;
+    border-top: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+footer a {
+    font-size: 1rem;
+    border: none;
+    color: var(--page-background);
+    text-align: center;
+}
+
+.content-wrapper {
+    max-width: 960px; 
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    
+}
+
+header.page-title {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/Kawaii-Dake-Ja-Nai-Shikimori-san-Episode-3.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items:center;
 }
 header.page-title h1 {
     color: white;
@@ -104,6 +130,20 @@ section.list-colorized {
 html {
     height: 100%;
   }
+
+header.page-title h1 {
+    justify-content:center;
+    color: white;
+    font-size: 6rem;
+    border: none;
+    max-width: 960px; 
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(59, 59, 59, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
   
   .parallax {
     /* The image used */
@@ -118,3 +158,26 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  @media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+    header.page-title h1 {
+        color: white;
+        border: none;
+        font-size: 5rem;
+    }
+  }
+  @media only screen and (max-width: 300px) {
+    header.page-title h1 {
+        color: white;
+        border: none;
+        font-size: 2rem;
+    }
+    UL.main-menu li a:hover{
+        display: inline-block;
+        background-size: cover;
+        background-color: var(--hover-color);
+        width: 100%;
+    }
+}
