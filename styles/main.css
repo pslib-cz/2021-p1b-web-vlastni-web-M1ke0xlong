@@ -82,10 +82,41 @@ header.page-title {
     justify-content:center;
     align-items:center;
 }
+header.page-title-top {
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/Kawaii-Dake-Ja-Nai-Shikimori-san-Episode-3.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items:baseline;
+    padding-top: 5rem;
+}
 header.page-title h1 {
+    justify-content:center;
     color: white;
+    font-size: 6rem;
     border: none;
-    font-size: 7rem;
+    max-width: 960px; 
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(59, 59, 59, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    
+}
+header.page-title-top h1 {
+    color: white;
+    font-size: 6rem;
+    border: none;
+    max-width: 960px; 
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgba(59, 59, 59, 0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
 }
 body > nav  {
     position: fixed;
@@ -94,6 +125,7 @@ body > nav  {
     backdrop-filter: blur(5px);
     left:0;
     right:0;
+    z-index: 1;
 }
 ul.main-menu{
     list-style-type: none;
@@ -127,22 +159,17 @@ section.list-colorized {
     font-weight:400;
     color: black;
 }
+section.text h1{
+    color: black;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
 html {
     height: 100%;
   }
 
-header.page-title h1 {
-    justify-content:center;
-    color: white;
-    font-size: 6rem;
-    border: none;
-    max-width: 960px; 
-    margin: 0 auto;
-    padding: 1rem;
-    background-color: rgba(59, 59, 59, 0.5);
-    border-radius: 15px;
-    backdrop-filter: blur(5px);
-}
+
 
   
   .parallax {
@@ -163,16 +190,30 @@ header.page-title h1 {
         width: 100%;
     }
     header.page-title h1 {
+        justify-content:center;
         color: white;
+        font-size: 4rem;
         border: none;
-        font-size: 5rem;
+         max-width: 960px; 
+        margin: 0 auto;
+        padding: 1rem;
+        background-color: rgba(59, 59, 59, 0.5);
+        border-radius: 15px;
+        backdrop-filter: blur(5px);
     }
   }
   @media only screen and (max-width: 300px) {
     header.page-title h1 {
+        justify-content:center;
         color: white;
-        border: none;
         font-size: 2rem;
+        border: none;
+        max-width: 960px; 
+        margin: 0 auto;
+        padding: 1rem;
+        background-color: rgba(59, 59, 59, 0.5);
+        border-radius: 15px;
+        backdrop-filter: blur(5px);
     }
     UL.main-menu li a:hover{
         display: inline-block;
