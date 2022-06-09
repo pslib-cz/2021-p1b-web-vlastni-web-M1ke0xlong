@@ -27,7 +27,7 @@ p {
     color: black;
 }
 
-h1,h2,h3, footer a {
+h1,h2,h3, footer a, h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
     color: var(--h-color);
@@ -35,8 +35,12 @@ h1,h2,h3, footer a {
   }
 a {
     color: var(--link-color);
+    border: none;
+    text-decoration: none;
 }
-
+.text a:before {
+    content: url(../images/Icons/20px-OOjs_UI_icon_newWindow-ltr.svg.png)" ";
+}
 footer {
     height: 100%;
     width: 100%;
@@ -159,7 +163,7 @@ section.list-colorized {
     font-weight:400;
     color: black;
 }
-section.text h1{
+section.text h1,h2{
     color: black;
     border: none;
     padding: 0;
@@ -189,7 +193,7 @@ html {
     body {
         width: 100%;
     }
-    header.page-title h1 {
+    header.page-title h1, header.page-title-top h1 {
         justify-content:center;
         color: white;
         font-size: 4rem;
@@ -200,10 +204,11 @@ html {
         background-color: rgba(59, 59, 59, 0.5);
         border-radius: 15px;
         backdrop-filter: blur(5px);
+        text-align: center;
     }
   }
   @media only screen and (max-width: 300px) {
-    header.page-title h1 {
+    header.page-title h1,header.page-title-top h1 {
         justify-content:center;
         color: white;
         font-size: 2rem;
@@ -214,6 +219,7 @@ html {
         background-color: rgba(59, 59, 59, 0.5);
         border-radius: 15px;
         backdrop-filter: blur(5px);
+        text-align: center;
     }
     UL.main-menu li a:hover{
         display: inline-block;
@@ -222,3 +228,17 @@ html {
         width: 100%;
     }
 }
+section.red h2 {
+    color: #ff0000;
+    font-weight: bold;
+    text-align: center;
+}
+section li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--accent-color);
+}
+section li a:hover {
+    color: var(--accent-color)
+}
+
